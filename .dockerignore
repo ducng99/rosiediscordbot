@@ -1,0 +1,21 @@
+# git
+.git
+.github
+
+# dependencies & build artifacts (rebuilt inside the image)
+node_modules
+output
+dist
+out
+coverage
+
+# secrets & local config — never bake these into an image
+.env
+.env.*
+workflow.json
+
+# docs & tooling
+*.md
+Dockerfile
+.dockerignore
+yue2_minimal.json

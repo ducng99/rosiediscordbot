@@ -1,0 +1,23 @@
+{
+  "name": "rosiediscordbot",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^6"
+  },
+  "dependencies": {
+    "@comfyorg/sdk": "^0.4.0",
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.27.0",
+    "openai": "^7.18.0",
+    "sodium-native": "^5.1.0"
+  }
+}
