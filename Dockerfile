@@ -1,4 +1,4 @@
-FROM oven/bun:latest AS base
+FROM oven/bun:slim AS base
 WORKDIR /app
 
 FROM base AS deps
@@ -26,7 +26,7 @@ COPY package.json tsconfig.json index.ts ./
 COPY src ./src
 
 RUN mkdir -p /app/output \
-    && chown -R bun:bun /app
+    && chown -R 1000:1000 /app
 
 USER bun
 
